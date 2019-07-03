@@ -47,7 +47,7 @@ class PythonExample(BaseAgent):
                 if self.timer - 1.0 > packet.game_info.game_time_remaining:
                     self.ball_status = 2
             elif self.ball_status == 2:
-                ballstate = BallState(Physics(location=Vector3(0.0, 4500 * team_mul, 350.0), velocity=Vector3(0.0, 1000 * team_mul, 0.0)))
+                ballstate = BallState(Physics(location=Vector3(0.0, 5000 * team_mul, 350.0), velocity=Vector3(0.0, 6000 * team_mul, 0.0)))
                 self.set_game_state(GameState(ball=ballstate))
                 self.ball_status = 3
             elif self.ball_status == 3:
